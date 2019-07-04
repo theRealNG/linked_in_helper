@@ -1,0 +1,7 @@
+<h1> Hello </h1>
+
+<%= form_tag({action: :extract}, multipart: true) do %>
+  <%= file_field_tag 'result_set_page' %>
+  <%= hidden_field_tag 'format', 'csv' %>
+  <%= submit_tag("Extract") %>
+<% end %>
